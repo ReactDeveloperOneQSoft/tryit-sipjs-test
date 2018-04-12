@@ -156,6 +156,7 @@ export default class Session extends React.Component
 
 		session.on('progress', (data) =>
 		{
+			console.log('Session progress: ', data);
 			if (!this._mounted)
 				return;
 
@@ -167,6 +168,7 @@ export default class Session extends React.Component
 
 		session.on('accepted', (data) =>
 		{
+			console.log('Session accetped: ', data);
 			if (!this._mounted)
 				return;
 
@@ -186,6 +188,7 @@ export default class Session extends React.Component
 
 		session.on('failed', (data) =>
 		{
+			console.log('Session failed: ', data);
 			if (!this._mounted)
 				return;
 
@@ -204,6 +207,7 @@ export default class Session extends React.Component
 
 		session.on('ended', (data) =>
 		{
+			console.log('Session ended: ', data);
 			if (!this._mounted)
 				return;
 
